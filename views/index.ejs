@@ -1,0 +1,75 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SREETHI</title>
+  <link rel="stylesheet" href="/styles/main.css"> <!-- Link to your main CSS file -->
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <!-- Add other navigation items as needed -->
+    </ul>
+  </nav>
+
+  <!-- First Section - Name and Description -->
+  <section id="home" class="first-screen">
+    <div class="center">
+      <h1>SREETHI</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat repellendus, cumque, eius odit deleniti doloremque blanditiis praesentium maiores minima ducimus recusandae totam. Mollitia architecto soluta, dolorem a eveniet praesentium reiciendis?</p>
+    </div>
+  </section>
+
+  <!-- Second Section - Categories -->
+  <section id="categories" class="second-screen">
+    <div class="grid">
+      <!-- Category 1 -->
+      <div class="category">
+        <a href="#category1">
+          <img src="images/000107506.jpg" alt="Category 1">
+          <h3>Category 1</h3>
+        </a>
+      </div>
+      <!-- Add other categories -->
+      <!-- Category 2 -->
+      <div class="category">
+        <a href="#category2">
+          <img src="images/000107506.jpg" alt="Category 2">
+          <h3>Category 2</h3>
+        </a>
+      </div>
+      <!-- Add other categories -->
+      <!-- Category 3 -->
+      <div class="category">
+        <a href="#category3">
+          <img src="images/000107506.jpg" alt="Category 3">
+          <h3>Category 3</h3>
+        </a>
+      </div>
+      <!-- Add other categories -->
+      <!-- Continue the pattern for the remaining categories -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <%= currentYear %> Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for smooth scrolling (Optional) -->
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute('href');
+        const section = document.querySelector(target);
+        section.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
