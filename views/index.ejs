@@ -1,75 +1,214 @@
-<!-- views/index.ejs -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SREETHI</title>
-  <link rel="stylesheet" href="/styles/main.css"> <!-- Link to your main CSS file -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#categories">Categories</a></li>
-      <!-- Add other navigation items as needed -->
-    </ul>
-  </nav>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <div class="header__logo-img-cont">
+                    <img src="images/WhatsApp Image 2023-03-29 at 01.12.32.jpg" alt="SREETHI" class="header__logo-img" />
+                </div>
+                <span class="header__logo-sub">SREETHI</span>
+            </div>
+            <div class="header__main">
+                <ul class="header__links">
+                    <li class="header__link-wrapper">
+                        <a href="./" class="header__link"> Home </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./#about" class="header__link">About me </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./#categories" class="header__link"> MY WORKS </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./#resume" class="header__link"> resume </a>
+                    </li>
+                </ul>
+                <div class="header__main-ham-menu-cont">
+                    <img src="/images/burger-menu-svgrepo-com (1).svg" alt="hamburger menu" class="header__main-ham-menu" />
+                </div>
+            </div>
+        </div>
+        <div class="header__sm-menu">
+            <div class="header__sm-menu-content">
+                <ul class="header__sm-menu-links">
+                    <li class="header__sm-menu-link">
+                        <a href="./"> Home </a>
+                    </li>
+                    <li class="header__sm-menu-link">
+                        <a href="./#about"> About me </a>
+                    </li>
+                    <li class="header__sm-menu-link">
+                        <a href="./#categories"> MY WORKS </a>
+                    </li>
+                    <li class="header__sm-menu-link">
+                        <a href="./#contact"> resume </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
-  <!-- First Section - Name and Description -->
-  <section id="home" class="first-screen">
-    <div class="center">
-      <h1>SREETHI</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat repellendus, cumque, eius odit deleniti doloremque blanditiis praesentium maiores minima ducimus recusandae totam. Mollitia architecto soluta, dolorem a eveniet praesentium reiciendis?</p>
-    </div>
-  </section>
+    <section class="home-hero">
+        <div class="home-hero__content">
+            <h1 class="heading-primary">Hey, SREETHI here !</h1>
+            <div class="home-hero__info">
+                <p class="text-primary">ABCDEFGHIJKAKAFNKJVKJSV KJV JKDVVSJK</p>
+            </div>
+            <div class="home-hero__cta">
+                <a href="./#categories" class="btn btn--bg">MY WORK</a>
+            </div>
+        </div>
+        <div class="home-hero__socials">
+            <div class="home-hero__social">
+                <a href="#" class="home-hero__social-icon-link">
+                    <img src="" alt="icon" class="home-hero__social-icon" />
+                </a>
+            </div>
+            <div class="home-hero__social">
+                <a href="#" class="home-hero__social-icon-link">
+                    <img src="" alt="icon" class="home-hero__social-icon" />
+                </a>
+            </div>
+            <div class="home-hero__social">
+                <a href="#" class="home-hero__social-icon-link">
+                    <img src="" alt="icon" class="home-hero__social-icon" />
+                </a>
+            </div>
+            <div class="home-hero__social">
+                <a href="#" class="home-hero__social-icon-link">
+                    <img src="/images/icons8-youtube-48.png" alt="icon" class="home-hero__social-icon" />
+                </a>
+            </div>
+            <div class="home-hero__social">
+                <a href="#" class="home-hero__social-icon-link home-hero__social-icon-link--bd-none">
+                    <img src="/images/Instagram-logo-transparent-PNG.png" alt="icon" class="home-hero__social-icon" />
+                </a>
+            </div>
+        </div>
+        <div class="home-hero__mouse-scroll-cont">
+            <div class="mouse"></div>
+        </div>
+    </section>
 
-  <!-- Second Section - Categories -->
-  <section id="categories" class="second-screen">
-    <div class="grid">
-      <!-- Category 1 -->
-      <div class="category">
-        <a href="#category1">
-          <img src="images/000107506.jpg" alt="Category 1">
-          <h3>Category 1</h3>
-        </a>
-      </div>
-      <!-- Add other categories -->
-      <!-- Category 2 -->
-      <div class="category">
-        <a href="#category2">
-          <img src="images/000107506.jpg" alt="Category 2">
-          <h3>Category 2</h3>
-        </a>
-      </div>
-      <!-- Add other categories -->
-      <!-- Category 3 -->
-      <div class="category">
-        <a href="#category3">
-          <img src="images/000107506.jpg" alt="Category 3">
-          <h3>Category 3</h3>
-        </a>
-      </div>
-      <!-- Add other categories -->
-      <!-- Continue the pattern for the remaining categories -->
-    </div>
-  </section>
+    <section id="categories" class="second-screen">
+        <div class="grid">
+            <!-- Category 1 -->
+            <div class="category">
+                <a href="#category1">
+                    <img src="images/000107506.jpg" alt="Category 1" />
+                    <h3>Category 1</h3>
+                </a>
+            </div>
+            
+            <!-- Category 2 -->
+            <div class="category">
+                <a href="#category2">
+                    <img src="images/000107506.jpg" alt="Category 2" />
+                    <h3>Category 2</h3>
+                </a>
+            </div>
+            
+            <!-- Category 3 -->
+            <div class="category">
+                <a href="#category3">
+                    <img src="images/000107506.jpg" alt="Category 3" />
+                    <h3>Category 3</h3>
+                </a>
+            </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; <%= currentYear %> Your Name. All rights reserved.</p>
-  </footer>
+            <!-- Category 4 -->
+            <div class="category">
+                <a href="#category4">
+                    <img src="images/000107506.jpg" alt="Category 4" />
+                    <h3>Category 4</h3>
+                </a>
+            </div>
 
-  <!-- JavaScript for smooth scrolling (Optional) -->
-  <script>
-    const links = document.querySelectorAll('nav ul li a');
-    links.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const target = e.target.getAttribute('href');
-        const section = document.querySelector(target);
-        section.scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
+            <!-- Category 5 -->
+            <div class="category">
+                <a href="#category5">
+                    <img src="images/000107506.jpg" alt="Category 5" />
+                    <h3>Category 5</h3>
+                </a>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="category">
+                <a href="#category6">
+                    <img src="images/000107506.jpg" alt="Category 66" />
+                    <h3>Category 6</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Section (about) -->
+    <section id="about" class="third-screen">
+        <h2>About Me</h2>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SREETHI. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling  -->
+    <script>
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = e.target.getAttribute('href');
+                const section = document.querySelector(target);
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
+const smallMenu = document.querySelector('.header__sm-menu')
+const headerHamMenuBtn = document.querySelector('.header__main-ham-menu')
+const headerHamMenuCloseBtn = document.querySelector(
+  '.header__main-ham-menu-close'
+)
+const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
+
+hamMenuBtn.addEventListener('click', () => {
+  if (smallMenu.classList.contains('header__sm-menu--active')) {
+    smallMenu.classList.remove('header__sm-menu--active')
+  } else {
+    smallMenu.classList.add('header__sm-menu--active')
+  }
+  if (headerHamMenuBtn.classList.contains('d-none')) {
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  } else {
+    headerHamMenuBtn.classList.add('d-none')
+    headerHamMenuCloseBtn.classList.remove('d-none')
+  }
+})
+
+for (let i = 0; i < headerSmallMenuLinks.length; i++) {
+  headerSmallMenuLinks[i].addEventListener('click', () => {
+    smallMenu.classList.remove('header__sm-menu--active')
+    headerHamMenuBtn.classList.remove('d-none')
+    headerHamMenuCloseBtn.classList.add('d-none')
+  })
+}
+
+// ---
+const headerLogoConatiner = document.querySelector('.header__logo-container')
+
+headerLogoConatiner.addEventListener('click', () => {
+  location.href = 'index.ejs'
+})
+    </script>
 </body>
 </html>
